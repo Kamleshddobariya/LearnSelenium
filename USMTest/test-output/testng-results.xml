@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-31T12:28:58 IST" name="Default suite" finished-at="2020-03-31T12:31:30 IST" duration-ms="151329">
+    <groups>
+    </groups>
+    <test started-at="2020-03-31T12:28:58 IST" name="Default test" finished-at="2020-03-31T12:31:30 IST" duration-ms="151329">
+      <class name="com.usm.qa.testcases.NewStonePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:28:59 IST" name="setUp" finished-at="2020-03-31T12:29:23 IST" duration-ms="24030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateCreateNewStone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:29:23 IST" name="validateCreateNewStone" data-provider="getNewStoneTestData" finished-at="2020-03-31T12:29:35 IST" duration-ms="12082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India_Profile_QA2M]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WFH_All_Demo_5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.302]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Round]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[779.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[using selenium web-driver]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kamlesh_Test]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[AGS]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[AAA1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[G]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[VVS1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[G]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[EX]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Inert]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Red]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[5.23]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[5.2]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[3.21]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewStone -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:29:35 IST" name="tearDown" finished-at="2020-03-31T12:29:35 IST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:29:35 IST" name="setUp" finished-at="2020-03-31T12:29:56 IST" duration-ms="20977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateCreateNewStone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:29:56 IST" name="validateCreateNewStone" data-provider="getNewStoneTestData" finished-at="2020-03-31T12:30:13 IST" duration-ms="16684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India_Profile_QA2M]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WFH_All_Demo_6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.301]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Round]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[778.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[using selenium web-driver]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kamlesh_Test]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[GIA]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[AAA2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[VG]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[IF]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[VG]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[VG]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Nil]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Yellow]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[5.18]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[5.14]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[3.21]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewStone -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:30:13 IST" name="tearDown" finished-at="2020-03-31T12:30:14 IST" duration-ms="640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:30:14 IST" name="setUp" finished-at="2020-03-31T12:31:03 IST" duration-ms="49219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateCreateNewStone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:31:03 IST" name="validateCreateNewStone" data-provider="getNewStoneTestData" finished-at="2020-03-31T12:31:29 IST" duration-ms="26074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India_Profile_QA2M]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WFH_All_Demo_7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Round]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[777.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[using selenium web-driver]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kamlesh_Test]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Sarine]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[AAA3]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[EX]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[FL]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[EX]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[G]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[None]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Blue]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[5.17]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[5.14]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[3.21]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewStone -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.NewStonePageTest@7f010382]" started-at="2020-03-31T12:31:29 IST" name="tearDown" finished-at="2020-03-31T12:31:30 IST" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.usm.qa.testcases.NewStonePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

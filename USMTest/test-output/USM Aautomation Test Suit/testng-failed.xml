@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [USM Aautomation Test Suit]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="TestNewUSM(failed)">
+    <classes>
+      <class name="com.usm.qa.testcases.StonesPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyClearButton"/>
+        </methods>
+      </class> <!-- com.usm.qa.testcases.StonesPageTest -->
+    </classes>
+  </test> <!-- TestNewUSM(failed) -->
+</suite> <!-- Failed suite [USM Aautomation Test Suit] -->
