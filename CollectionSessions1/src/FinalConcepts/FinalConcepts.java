@@ -5,7 +5,7 @@ public class FinalConcepts {
 	public static void main(String[] args) {
 		
 		// final(keyword) concept is used to define constant value
-		// prevent inheritance to github test
+		// prevent inheritance to github done
 		
 		final int i = 10;
 //		i = 20;
