@@ -31,7 +31,10 @@ public class WrapperClassConcept {
 		String s = String.valueOf(j);
 		System.out.println(s+20);
 		
-
+//		String u = "100A";
+//		Integer.parseInt(u); // number format exception
+//		
+		
 	}
 
 }
