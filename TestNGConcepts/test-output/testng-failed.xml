@@ -3,11 +3,11 @@
 <suite name="Failed suite [Yahoo App Automation Test Suit]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.parameters.ParameterTest">
+      <class name="MyTests.KeyPressEven">
         <methods>
-          <include name="yahooLogin" invocation-numbers="0"/>
+          <include name="keyEventTest"/>
         </methods>
-      </class> <!-- com.parameters.ParameterTest -->
+      </class> <!-- MyTests.KeyPressEven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Yahoo App Automation Test Suit] -->
