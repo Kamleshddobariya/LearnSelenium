@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-17T18:29:38 IST" name="Yahoo App Automation Test Suit" finished-at="2020-04-17T18:29:54 IST" duration-ms="16224">
+  <suite started-at="2020-04-18T15:19:12 IST" name="Yahoo App Automation Test Suit" finished-at="2020-04-18T15:19:45 IST" duration-ms="32810">
     <groups>
+      <group name="Homepage">
+        <method signature="LogsLoginTest.freecrmLogoTest()[pri:3, instance:MyTests.LogsLoginTest@2d7275fc]" name="freecrmLogoTest" class="MyTests.LogsLoginTest"/>
+        <method signature="LogsLoginTest.freecrmTitleTest()[pri:1, instance:MyTests.LogsLoginTest@2d7275fc]" name="freecrmTitleTest" class="MyTests.LogsLoginTest"/>
+      </group> <!-- Homepage -->
     </groups>
-    <test started-at="2020-04-17T18:29:38 IST" name="Default test" finished-at="2020-04-17T18:29:54 IST" duration-ms="16224">
-      <class name="MyTests.KeyPressEven">
-        <test-method signature="keyEventTest()[pri:0, instance:MyTests.KeyPressEven@6973bf95]" started-at="2020-04-17T18:29:38 IST" name="keyEventTest" finished-at="2020-04-17T18:29:54 IST" duration-ms="16205" status="PASS">
+    <test started-at="2020-04-18T15:19:12 IST" name="Default test" finished-at="2020-04-18T15:19:45 IST" duration-ms="32810">
+      <class name="MyTests.LogsLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTests.LogsLoginTest@2d7275fc]" started-at="2020-04-18T15:19:12 IST" name="setUp" finished-at="2020-04-18T15:19:27 IST" duration-ms="15291" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- keyEventTest -->
-      </class> <!-- MyTests.KeyPressEven -->
+        </test-method> <!-- setUp -->
+        <test-method signature="freecrmTitleTest()[pri:1, instance:MyTests.LogsLoginTest@2d7275fc]" started-at="2020-04-18T15:19:27 IST" name="freecrmTitleTest" finished-at="2020-04-18T15:19:27 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freecrmTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MyTests.LogsLoginTest@2d7275fc]" started-at="2020-04-18T15:19:27 IST" name="tearDown" finished-at="2020-04-18T15:19:28 IST" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTests.LogsLoginTest@2d7275fc]" started-at="2020-04-18T15:19:28 IST" name="setUp" finished-at="2020-04-18T15:19:44 IST" duration-ms="16143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="freecrmLogoTest()[pri:3, instance:MyTests.LogsLoginTest@2d7275fc]" started-at="2020-04-18T15:19:44 IST" name="freecrmLogoTest" finished-at="2020-04-18T15:19:44 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freecrmLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MyTests.LogsLoginTest@2d7275fc]" started-at="2020-04-18T15:19:44 IST" name="tearDown" finished-at="2020-04-18T15:19:45 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MyTests.LogsLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Yahoo App Automation Test Suit -->
 </testng-results>
