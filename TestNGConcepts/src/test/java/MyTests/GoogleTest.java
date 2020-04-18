@@ -16,11 +16,14 @@ public class GoogleTest {
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "E:\\eclipse-workspace\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		driver.get("http://www.google.com");
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://www.google.com");
+		
 	}
 
 	@Test(priority = 1, groups="Homepage")
