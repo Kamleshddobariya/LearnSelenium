@@ -1,8 +1,8 @@
-2020-04-18 15:19:17,562  INFO [main] LogsLoginTest:35 - launching chrome browser
-2020-04-18 15:19:27,583  WARN [main] LogsLoginTest:44 - warning message
-2020-04-18 15:19:27,583 FATAL [main] LogsLoginTest:45 - fatal error message
-2020-04-18 15:19:27,583 DEBUG [main] LogsLoginTest:46 - debug message
-2020-04-18 15:19:33,365  INFO [main] LogsLoginTest:35 - launching chrome browser
-2020-04-18 15:19:44,395  WARN [main] LogsLoginTest:44 - warning message
-2020-04-18 15:19:44,395 FATAL [main] LogsLoginTest:45 - fatal error message
-2020-04-18 15:19:44,395 DEBUG [main] LogsLoginTest:46 - debug message
+2020-04-18 15:26:05,484  INFO [main] Logs:35 - launching chrome browser
+2020-04-18 15:26:15,450  WARN [main] Logs:44 - warning message
+2020-04-18 15:26:15,450 FATAL [main] Logs:45 - fatal error message
+2020-04-18 15:26:15,450 DEBUG [main] Logs:46 - debug message
+2020-04-18 15:26:21,063  INFO [main] Logs:35 - launching chrome browser
+2020-04-18 15:26:31,284  WARN [main] Logs:44 - warning message
+2020-04-18 15:26:31,284 FATAL [main] Logs:45 - fatal error message
+2020-04-18 15:26:31,284 DEBUG [main] Logs:46 - debug message
