@@ -17,11 +17,12 @@ public class MouseMovementConcept {
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.spicejet.com/");
-		
-		Actions action = new Actions(driver);
-		
+
 		Thread.sleep(3000);
+
+		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//a[@id='ctl00_HyperLinkLogin']"))).build().perform();
+
 		driver.findElement(By.linkText("Travel Agent Login")).click();
 
 	}
