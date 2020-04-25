@@ -11,8 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.usm.qa.util.WebEventListener;
 import com.usm.qa.util.TestUtil;
+import com.usm.qa.util.WebEventListener;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -43,7 +45,8 @@ public class TestBase {
 	public static void initialization() {
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "E:\\eclipse-workspace\\chromedriver\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "E:\\eclipse-workspace\\chromedriver\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if(browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "D:\\eclipse-workspace\\selenium-driver\\ffdriver\\geckodriver");
