@@ -8,14 +8,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class BrowserDependecy {
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class UsingWebDriverManager {
 
 	WebDriver driver;
-
+	
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "E:\\eclipse-workspace\\chromedriver\\chromedriver.exe");
-		driver = new ChromeDriver();
+		
+		WebDriverManager.chromedriver().setup();
+//		System.setProperty("webdriver.chrome.driver", "E:\\eclipse-workspace\\chromedriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://www.google.com");
 		
