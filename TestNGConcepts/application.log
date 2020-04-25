@@ -1,8 +1,25 @@
-2020-04-18 15:26:05,484  INFO [main] Logs:35 - launching chrome browser
-2020-04-18 15:26:15,450  WARN [main] Logs:44 - warning message
-2020-04-18 15:26:15,450 FATAL [main] Logs:45 - fatal error message
-2020-04-18 15:26:15,450 DEBUG [main] Logs:46 - debug message
-2020-04-18 15:26:21,063  INFO [main] Logs:35 - launching chrome browser
-2020-04-18 15:26:31,284  WARN [main] Logs:44 - warning message
-2020-04-18 15:26:31,284 FATAL [main] Logs:45 - fatal error message
-2020-04-18 15:26:31,284 DEBUG [main] Logs:46 - debug message
+2020-04-25 16:29:10,184 DEBUG [main] Preferences:118 - Preference chrome=81 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:10,186 DEBUG [main] Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:10,187  INFO [main] WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+2020-04-25 16:29:10,193 DEBUG [main] WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
+2020-04-25 16:29:10,194  INFO [main] WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+2020-04-25 16:29:17,875 DEBUG [main] Preferences:118 - Preference chrome=81 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:17,876 DEBUG [main] Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:17,876  INFO [main] WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+2020-04-25 16:29:17,877 DEBUG [main] WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
+2020-04-25 16:29:17,878  INFO [main] WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+2020-04-25 16:29:25,332 DEBUG [main] Preferences:118 - Preference chrome=81 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:25,333 DEBUG [main] Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:25,333  INFO [main] WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+2020-04-25 16:29:25,335 DEBUG [main] WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
+2020-04-25 16:29:25,336  INFO [main] WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+2020-04-25 16:29:32,973 DEBUG [main] Preferences:118 - Preference chrome=81 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:32,974 DEBUG [main] Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:32,975  INFO [main] WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+2020-04-25 16:29:32,976 DEBUG [main] WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
+2020-04-25 16:29:32,977  INFO [main] WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+2020-04-25 16:29:41,467 DEBUG [main] Preferences:118 - Preference chrome=81 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:41,468 DEBUG [main] Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-04-26 16:13:49)
+2020-04-25 16:29:41,469  INFO [main] WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+2020-04-25 16:29:41,473 DEBUG [main] WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
+2020-04-25 16:29:41,473  INFO [main] WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
