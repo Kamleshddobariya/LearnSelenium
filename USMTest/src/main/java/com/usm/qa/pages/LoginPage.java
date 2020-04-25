@@ -37,7 +37,7 @@ public class LoginPage extends TestBase {
 	
 	//Different Actions for the page:
 	//1. verify page title before login
-	public String validateLoginPageTile() {
+	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
 	

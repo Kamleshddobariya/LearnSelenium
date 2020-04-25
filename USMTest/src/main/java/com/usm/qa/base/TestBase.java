@@ -31,7 +31,8 @@ public class TestBase {
 	
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("E:\\eclipse-workspace\\USMTest\\src\\main\\java\\com\\usm\\qa\\config\\config.properties");
+//			System.out.println("go to read prop. file");
+			FileInputStream ip = new FileInputStream("C:\\Users\\User\\git\\repository\\USMTest\\src\\main\\java\\com\\usm\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

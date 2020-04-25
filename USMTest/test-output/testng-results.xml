@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-25T16:35:00 IST" name="Default suite" finished-at="2020-04-25T16:35:00 IST" duration-ms="36">
+  <suite started-at="2020-04-25T16:41:37 IST" name="Default suite" finished-at="2020-04-25T16:41:37 IST" duration-ms="34">
     <groups>
     </groups>
-    <test started-at="2020-04-25T16:35:00 IST" name="Default test" finished-at="2020-04-25T16:35:00 IST" duration-ms="36">
+    <test started-at="2020-04-25T16:41:37 IST" name="Default test" finished-at="2020-04-25T16:41:37 IST" duration-ms="34">
       <class name="com.usm.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="setUp" finished-at="2020-04-25T16:35:00 IST" duration-ms="3" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="setUp" finished-at="2020-04-25T16:41:37 IST" duration-ms="3" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.usm.qa.base.TestBase.initialization(TestBase.java:47)
+at com.usm.qa.base.TestBase.initialization(TestBase.java:48)
 at com.usm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -51,11 +51,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="loginPageTitleTest" finished-at="2020-04-25T16:35:00 IST" duration-ms="0" status="SKIP">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="loginPageTitleTest" finished-at="2020-04-25T16:41:37 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.usm.qa.base.TestBase.initialization(TestBase.java:47)
+at com.usm.qa.base.TestBase.initialization(TestBase.java:48)
 at com.usm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -95,15 +95,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587812700073" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587813097854" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="VerifySarinelogo()[pri:2, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="VerifySarinelogo" finished-at="2020-04-25T16:35:00 IST" duration-ms="0" status="SKIP">
+        <test-method signature="VerifySarinelogo()[pri:2, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="VerifySarinelogo" finished-at="2020-04-25T16:41:37 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.usm.qa.base.TestBase.initialization(TestBase.java:47)
+at com.usm.qa.base.TestBase.initialization(TestBase.java:48)
 at com.usm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -143,19 +143,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySarinelogo -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587812700075" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587813097856" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587812700077" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587813097858" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="loginTest()[pri:3, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="loginTest" finished-at="2020-04-25T16:35:00 IST" duration-ms="0" status="SKIP">
+        <test-method signature="loginTest()[pri:3, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="loginTest" finished-at="2020-04-25T16:41:37 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.usm.qa.base.TestBase.initialization(TestBase.java:47)
+at com.usm.qa.base.TestBase.initialization(TestBase.java:48)
 at com.usm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -195,23 +195,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587812700078" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587813097859" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587812700080" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587813097861" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587812700081" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587813097862" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestBoolean()[pri:4, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="loginTestBoolean" finished-at="2020-04-25T16:35:00 IST" duration-ms="0" status="SKIP">
+        <test-method signature="loginTestBoolean()[pri:4, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="loginTestBoolean" finished-at="2020-04-25T16:41:37 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.usm.qa.base.TestBase.initialization(TestBase.java:47)
+at com.usm.qa.base.TestBase.initialization(TestBase.java:48)
 at com.usm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -251,7 +251,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestBoolean -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:35:00 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587812700083" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.usm.qa.testcases.LoginPageTest@56528192]" started-at="2020-04-25T16:41:37 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1587813097864" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

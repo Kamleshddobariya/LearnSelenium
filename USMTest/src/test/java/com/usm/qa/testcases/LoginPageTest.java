@@ -29,7 +29,7 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=1) 
 	public void loginPageTitleTest() throws InterruptedException { 
 		Thread.sleep(3000);
-		String title = loginPage.validateLoginPageTile(); 
+		String title = loginPage.validateLoginPageTitle(); 
 		System.out.println(title);
 		Assert.assertEquals(title, "Login");
 	}
@@ -37,7 +37,7 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=2) 
 	public void VerifySarinelogo() { 
 		boolean flag = loginPage.validateSarineLogo();
-		Assert.assertTrue(flag); 
+		Assert.assertEquals(flag, true); 
 		System.out.println(flag);
 	}
 	  
