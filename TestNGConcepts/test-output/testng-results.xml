@@ -1,41 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-18T15:26:00 IST" name="Yahoo App Automation Test Suit" finished-at="2020-04-18T15:26:31 IST" duration-ms="31891">
+  <suite started-at="2020-04-25T16:29:09 IST" name="Yahoo App Automation Test Suit" finished-at="2020-04-25T16:29:49 IST" duration-ms="39812">
     <groups>
       <group name="Homepage">
-        <method signature="Logs.freecrmLogoTest()[pri:3, instance:com.test.utility.Logs@478190fc]" name="freecrmLogoTest" class="com.test.utility.Logs"/>
-        <method signature="Logs.freecrmTitleTest()[pri:1, instance:com.test.utility.Logs@478190fc]" name="freecrmTitleTest" class="com.test.utility.Logs"/>
+        <method signature="UsingWebDriverManager.googleEmailLinkTest()[pri:2, instance:MyTests.UsingWebDriverManager@75329a49]" name="googleEmailLinkTest" class="MyTests.UsingWebDriverManager"/>
+        <method signature="UsingWebDriverManager.googleLogoTest()[pri:3, instance:MyTests.UsingWebDriverManager@75329a49]" name="googleLogoTest" class="MyTests.UsingWebDriverManager"/>
+        <method signature="UsingWebDriverManager.googleTitleTest()[pri:1, instance:MyTests.UsingWebDriverManager@75329a49]" name="googleTitleTest" class="MyTests.UsingWebDriverManager"/>
       </group> <!-- Homepage -->
+      <group name="Extra">
+        <method signature="UsingWebDriverManager.TC1()[pri:4, instance:MyTests.UsingWebDriverManager@75329a49]" name="TC1" class="MyTests.UsingWebDriverManager"/>
+        <method signature="UsingWebDriverManager.TC2()[pri:5, instance:MyTests.UsingWebDriverManager@75329a49]" name="TC2" class="MyTests.UsingWebDriverManager"/>
+      </group> <!-- Extra -->
     </groups>
-    <test started-at="2020-04-18T15:26:00 IST" name="Default test" finished-at="2020-04-18T15:26:31 IST" duration-ms="31891">
-      <class name="com.test.utility.Logs">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.utility.Logs@478190fc]" started-at="2020-04-18T15:26:00 IST" name="setUp" finished-at="2020-04-18T15:26:15 IST" duration-ms="15354" status="PASS">
+    <test started-at="2020-04-25T16:29:09 IST" name="Default test" finished-at="2020-04-25T16:29:49 IST" duration-ms="39812">
+      <class name="MyTests.UsingWebDriverManager">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:09 IST" name="setUp" finished-at="2020-04-25T16:29:17 IST" duration-ms="7243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="freecrmTitleTest()[pri:1, instance:com.test.utility.Logs@478190fc]" started-at="2020-04-18T15:26:15 IST" name="freecrmTitleTest" finished-at="2020-04-18T15:26:15 IST" duration-ms="8" status="PASS">
+        <test-method signature="googleTitleTest()[pri:1, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:17 IST" name="googleTitleTest" finished-at="2020-04-25T16:29:17 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- freecrmTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.utility.Logs@478190fc]" started-at="2020-04-18T15:26:15 IST" name="tearDown" finished-at="2020-04-18T15:26:16 IST" duration-ms="644" status="PASS">
+        </test-method> <!-- googleTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:17 IST" name="tearDown" finished-at="2020-04-25T16:29:17 IST" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.utility.Logs@478190fc]" started-at="2020-04-18T15:26:16 IST" name="setUp" finished-at="2020-04-18T15:26:31 IST" duration-ms="15178" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:17 IST" name="setUp" finished-at="2020-04-25T16:29:24 IST" duration-ms="6803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="freecrmLogoTest()[pri:3, instance:com.test.utility.Logs@478190fc]" started-at="2020-04-18T15:26:31 IST" name="freecrmLogoTest" finished-at="2020-04-18T15:26:31 IST" duration-ms="38" status="PASS">
+        <test-method signature="googleEmailLinkTest()[pri:2, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:24 IST" name="googleEmailLinkTest" finished-at="2020-04-25T16:29:24 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- freecrmLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.utility.Logs@478190fc]" started-at="2020-04-18T15:26:31 IST" name="tearDown" finished-at="2020-04-18T15:26:31 IST" duration-ms="649" status="PASS">
+        </test-method> <!-- googleEmailLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:24 IST" name="tearDown" finished-at="2020-04-25T16:29:25 IST" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.test.utility.Logs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:25 IST" name="setUp" finished-at="2020-04-25T16:29:32 IST" duration-ms="6996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="googleLogoTest()[pri:3, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:32 IST" name="googleLogoTest" finished-at="2020-04-25T16:29:32 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:32 IST" name="tearDown" finished-at="2020-04-25T16:29:32 IST" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:32 IST" name="setUp" finished-at="2020-04-25T16:29:40 IST" duration-ms="7830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC1()[pri:4, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:40 IST" name="TC1" finished-at="2020-04-25T16:29:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:40 IST" name="tearDown" finished-at="2020-04-25T16:29:41 IST" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:41 IST" name="setUp" finished-at="2020-04-25T16:29:49 IST" duration-ms="7686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC2()[pri:5, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:49 IST" name="TC2" finished-at="2020-04-25T16:29:49 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MyTests.UsingWebDriverManager@75329a49]" started-at="2020-04-25T16:29:49 IST" name="tearDown" finished-at="2020-04-25T16:29:49 IST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MyTests.UsingWebDriverManager -->
     </test> <!-- Default test -->
   </suite> <!-- Yahoo App Automation Test Suit -->
 </testng-results>

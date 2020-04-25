@@ -3,11 +3,15 @@
 <suite name="Failed suite [Yahoo App Automation Test Suit]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MyTests.KeyPressEven">
+      <class name="MyTests.UsingWebDriverManager">
         <methods>
-          <include name="keyEventTest"/>
+          <include name="googleTitleTest"/>
+          <include name="googleEmailLinkTest"/>
+          <include name="googleLogoTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- MyTests.KeyPressEven -->
+      </class> <!-- MyTests.UsingWebDriverManager -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Yahoo App Automation Test Suit] -->
