@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.usm.qa.testcases.LoginPageTest">
+      <class name="com.usm.qa.testcases.HomePageTest">
         <methods>
-          <include name="loginPageTitleTest"/>
-          <include name="tearDown"/>
-          <include name="loginTestBoolean"/>
-          <include name="VerifySarinelogo"/>
+          <include name="verifyuserName"/>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.usm.qa.testcases.LoginPageTest -->
+      </class> <!-- com.usm.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

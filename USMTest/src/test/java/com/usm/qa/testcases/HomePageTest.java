@@ -46,10 +46,10 @@ public class HomePageTest extends TestBase{
 	public void verifyuserName() {
 		String userName = homePage.validateuserNameLabel();
 		System.out.println("user is: " + userName);
-		Assert.assertEquals(userName, "India_Profile_QA2", "User not matached");
+		Assert.assertEquals(userName, prop.getProperty("ownername"), "User not matached");
 		
 		try { 
-			if (homePage.validateuserNameLabel().equals("India_Profile_QA2")) {
+			if (homePage.validateuserNameLabel().equals(prop.getProperty("ownername"))) {
 				  System.out.println("Test Pass"); 
 			} else { 
 			  	  System.out.println("Test Fail");
@@ -60,10 +60,10 @@ public class HomePageTest extends TestBase{
 	}
 	
 	@Test(priority=3)
-	public void verifyuserNameDisplay( ) {
-		boolean flag = homePage.verifyuserNameDisplay();
+	public void verifylogOutButton( ) {
+		boolean flag = homePage.verifylogOutButtonDisplay();
+		Assert.assertTrue(flag);
 		System.out.println(flag);
-		//Assert.assertTrue(homePage.verifyuserNameDisplay());
 	}
 	
 	@Test(priority=4) 

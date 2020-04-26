@@ -1,19 +1,23 @@
 package com.usm.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.usm.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(xpath = "//span[contains(text(),'India_Profile_QA2')]")
+//	@FindBy(xpath = "//span[contains(text(),'India_Profile_QA2')]")
+	@FindBy(xpath = "//span[@class='username-indicator ng-star-inserted']")
 	public WebElement userNameLabel;
 	
 	@FindBy(xpath = "//button[@class='logout-button btn btn-sm btn-inverse']")
 	public WebElement logOut;
-	
+
 	@FindBy(linkText = "STONES")
 	public WebElement verifyMe;
 	
@@ -51,13 +55,16 @@ public class HomePage extends TestBase {
 	
 	//2. verify login userName Label
 	public String validateuserNameLabel() {
+		WebDriverWait usernamevalue = new WebDriverWait(driver, 60);
+		usernamevalue.until(ExpectedConditions.visibilityOf(userNameLabel));
 		return userNameLabel.getText();
 			
 	}
 	
-	public boolean verifyuserNameDisplay() {
-		return userNameLabel.isDisplayed();
-			
+	public boolean verifylogOutButtonDisplay() {
+		WebDriverWait usernamevalue = new WebDriverWait(driver, 60);
+		usernamevalue.until(ExpectedConditions.visibilityOf(logOut));
+		return logOut.isDisplayed();
 	}
 	
 	//3. verify Archive Page 

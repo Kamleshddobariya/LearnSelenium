@@ -57,9 +57,10 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test(priority=4)
-	public void loginTestBoolean() {
+	public void VerifyTitleAfterLogin() {
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		boolean flag = loginPage.VerifyUSMTitle();
+		Assert.assertEquals(flag, true);
 		System.out.println(flag);
 	}
 		
