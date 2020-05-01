@@ -12,7 +12,7 @@ public class WebDriverTable {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("E:\\eclipse-workspace\\WebDriverDemo\\sar\\main\\webapp\\TableTest.html");
+		driver.get("C:\\Users\\User\\git\\repository\\WebDriverDemo\\sar\\main\\webapp\\TableTest.html");
 
 //		WebElement outerTable = driver.findElement(By.tagName("table"));
 //		WebElement innerTable = outerTable.findElement(By.tagName("table"));

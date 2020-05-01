@@ -13,7 +13,7 @@ public class WebDriverCheckBoxes {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("E:\\eclipse-workspace\\WebDriverDemo\\sar\\main\\webapp\\CheckBoxTest.html");
+		driver.get("C:\\Users\\User\\git\\repository\\WebDriverDemo\\sar\\main\\webapp\\CheckBoxTest.html");
 
 		WebElement checkBox = driver.findElement(By.id("greencolor"));
 		checkBox.click();

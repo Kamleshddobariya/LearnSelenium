@@ -15,7 +15,7 @@ public class WebDriverDropDown {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("E:\\eclipse-workspace\\WebDriverDemo\\sar\\main\\webapp\\DropDownTest.html");
+		driver.get("C:\\Users\\User\\git\\repository\\WebDriverDemo\\sar\\main\\webapp\\DropDownTest.html");
 
 		WebElement selectElement = driver.findElement(By.id("select1"));
 		Select select = new Select(selectElement);
