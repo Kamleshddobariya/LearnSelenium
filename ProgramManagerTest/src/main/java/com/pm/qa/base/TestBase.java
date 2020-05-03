@@ -32,7 +32,7 @@ public class TestBase {
 		try { // go to read prop. file
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"E:\\eclipse-workspace\\ProgramManagerTest\\src\\main\\java\\com\\pm\\qa\\config\\config.properties");
+					"C:\\Users\\User\\git\\repository\\ProgramManagerTest\\src\\main\\java\\com\\pm\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
