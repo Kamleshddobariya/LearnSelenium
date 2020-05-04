@@ -35,15 +35,32 @@ public class NewProgramPageTest extends TestBase{
 	
 	
 	@Test(priority=1) 
-	public void verifyCreateNewProgram() {
+	public void verifyCreateNewProgram() throws Exception {
 		
-
+		newprogramPage.clickNewProgram();
+		newprogramPage.enterProgramName();
+		
+		newprogramPage.createNewBundle();
+		newprogramPage.enterBundleName();
+		
+		newprogramPage.createNewTemplateList();
+		newprogramPage.selectTemplateTypeDD();
+		newprogramPage.clickOnTemplateApplyDD();
+		
+		newprogramPage.clickOnBundleActive();
+		newprogramPage.clickOnApplyBundle();
+		
+		newprogramPage.createNewMemberAccountList();
+		newprogramPage.selectMemberAccount();
+		
+		newprogramPage.selectPRPrintShop();
+		
 	}
 	
 	
 	@AfterMethod
 	public void tearDown( ) {
-		driver.quit();
+		//driver.quit();
 	}
 	
 }
