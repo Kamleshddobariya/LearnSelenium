@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pm.qa.base.TestBase;
@@ -140,7 +141,7 @@ public class NewProgramPage extends TestBase {
 
 	// 5. create new template list
 	public void createNewTemplateList() {
-		clickOn(driver, createTemplateList, 15);
+		//clickOn(driver, createTemplateList, 15);
 		createTemplateList.click();
 	}
 
@@ -152,16 +153,26 @@ public class NewProgramPage extends TestBase {
 		String PR_xpath = "//option[contains(text(),'Printed Report')]";
 		String Origin3D_xpath = "//option[contains(text(),'Origin 3D')]";
 
-		Thread.sleep(4000);
-		clickOn(driver, selectTemplateType, 15);
+		//*Thread.sleep(4000);
+		// *clickOn(driver, selectTemplateType, 15);
 		// selectTemplateType.click();
-		selectDropDownValue(DD_xpath, "Digital Display");
-		sendKeys(driver, templateName, 15, "AutoTest_DD");
+		// *selectDropDownValue(DD_xpath, "Digital Display");
+		// *sendKeys(driver, templateName, 15, "AutoTest_DD");
 		// templateName.submit();
-		clickOn(driver, selectTemplateName, 15);
+		// *clickOn(driver, selectTemplateName, 15);
 		// selectTemplateName.click();
 		// templateApply.click();
 
+		{
+			WebElement dropdown = driver.findElement(By.cssSelector("#templateForm > .ng-untouched"));
+			dropdown.findElement(By.xpath("//option[. = 'Digital Display']")).click();
+		}
+		
+//		sendKeys(driver, templateName, 15, "AutoTest_DD");
+//		clickOn(driver, selectTemplateName, 30);
+		
+		driver.findElement(By.linkText("AutoTest_DD")).click();
+		
 	}
 
 	// click on template apply
@@ -188,17 +199,25 @@ public class NewProgramPage extends TestBase {
 	// 10. select owner from member account list
 	public void selectMemberAccount() {
 		clickOn(driver, selectAccount, 15);
-		//sendKeys(driver, searchAccountName, 15, "India Profile team");
-		clickOn(driver, chooseAccount, 15);		
-	}
-	
-	// 11. select PR print shop
-	public void selectPRPrintShop() {
-		clickOn(driver, selectPrintShopPR, 15);
-		
+		// sendKeys(driver, searchAccountName, 15, "India Profile team");
+		clickOn(driver, chooseAccount, 15);
 	}
 
-	
+	// 11. select PR print shop
+	public void selectPRPrintShop() {
+		// clickOn(driver, selectPrintShopPR, 15);
+		
+//		WebElement prDropDown = driver.findElement(By.cssSelector(".left-col > .panel-body .ng-pristine"));
+//		Select select1 = new Select(prDropDown);
+//		select1.selectByVisibleText("Sarine");
+		
+		{
+			WebElement dropdown = driver.findElement(By.cssSelector(".left-col > .panel-body .ng-pristine"));
+			dropdown.findElement(By.xpath("//option[. = 'Sarine']")).click();
+		}		
+
+	}
+
 //****************************************************************************************//
 
 	// explicitly wait method:
