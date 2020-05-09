@@ -1,8 +1,12 @@
 package com.pm.qa.pages;
 
+import java.io.File;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +33,7 @@ public class NewProgramPage extends TestBase {
 	public WebElement bundleName;
 
 	@FindBy(xpath = "//h4[contains(text(),'Template List')]//a[@class='btn btn-primary pull-right']")
+	// @FindBy(css = "\".panel:nth-child(11) .btn\"")
 	public WebElement createTemplateList;
 
 	// @FindBy(xpath = "//select[@class='ng-pristine ng-invalid ng-invalid-required
@@ -60,7 +65,7 @@ public class NewProgramPage extends TestBase {
 	@FindBy(xpath = "//input[contains(@class,'form-control ng-pristine ng-valid ng-touched')]")
 	public WebElement searchAccountName;
 
-	@FindBy(xpath = "//span[contains(text(),'Kamlesh')]")
+	@FindBy(xpath = "//span[contains(text(),'Dlight SARINE')]") // Dlight SARINE OR Kamlesh
 	public WebElement chooseAccount;
 
 	@FindBy(xpath = "//select[contains(@class,'ng-pristine ng-valid ng-touched')]")
@@ -87,10 +92,10 @@ public class NewProgramPage extends TestBase {
 	@FindBy(xpath = "//form[@id='shippingAddressSelectionForm']//button[contains(@class,'btn btn-primary')][contains(text(),'Apply')]")
 	public WebElement applyShippingAddress3D;
 
-	@FindBy(xpath = "//div[contains(@class,'panel-body')]//div//input[contains(@class,'ng-pristine ng-valid ng-touched')]")
+	@FindBy(xpath = "//input[contains(@class,'ng-valid ng-touched ng-dirty ng-valid-parse')]")
 	public WebElement checkProgramLeadRole;
 
-	@FindBy(xpath = "//div[contains(@class,'right-col')]//div[contains(@class,'panel')]//div[contains(@class,'panel-body')]//div//input[contains(@class,'ng-pristine ng-valid ng-touched')]")
+	@FindBy(xpath = "//input[@class='ng-valid ng-dirty ng-valid-parse ng-touched']")
 	public WebElement checkProgramMeasureQCActivity;
 
 	@FindBy(xpath = "//button[contains(text(),'Apply')]")
@@ -105,7 +110,7 @@ public class NewProgramPage extends TestBase {
 	@FindBy(xpath = "//button[contains(text(),'Save')]")
 	public WebElement programSave;
 
-	@FindBy(xpath = "//div[@class='notifyjs-corner']")
+	@FindBy(xpath = "//div[@class='notifyjs-bootstrap-base notifyjs-bootstrap-success']")
 	public WebElement verifyProgramSaved;
 
 	// =============================================================================//
@@ -125,12 +130,13 @@ public class NewProgramPage extends TestBase {
 
 	// 2. enter new Program name
 	public void enterProgramName() {
-		sendKeys(driver, programName, 15, "AutoTest");
+		sendKeys(driver, programName, 15, prop.getProperty("programName"));
 	}
 
 	// 3. create New Bundle for New Program
 	public void createNewBundle() {
-		createNewBundle.click();
+		// createNewBundle.click();
+		clickOn(driver, createNewBundle, 15);
 	}
 
 	// 4. enter new Bundle name
@@ -140,8 +146,11 @@ public class NewProgramPage extends TestBase {
 	}
 
 	// 5. create new template list
-	public void createNewTemplateList() {
-		//clickOn(driver, createTemplateList, 15);
+	public void createNewTemplateList() throws Exception {
+
+		// driver.findElement(By.cssSelector(".panel:nth-child(11) .btn")).click();
+		Thread.sleep(5000);
+		// clickOn(driver, createTemplateList, 15);
 		createTemplateList.click();
 	}
 
@@ -153,7 +162,7 @@ public class NewProgramPage extends TestBase {
 		String PR_xpath = "//option[contains(text(),'Printed Report')]";
 		String Origin3D_xpath = "//option[contains(text(),'Origin 3D')]";
 
-		//*Thread.sleep(4000);
+		// *Thread.sleep(4000);
 		// *clickOn(driver, selectTemplateType, 15);
 		// selectTemplateType.click();
 		// *selectDropDownValue(DD_xpath, "Digital Display");
@@ -167,12 +176,12 @@ public class NewProgramPage extends TestBase {
 			WebElement dropdown = driver.findElement(By.cssSelector("#templateForm > .ng-untouched"));
 			dropdown.findElement(By.xpath("//option[. = 'Digital Display']")).click();
 		}
-		
+
 //		sendKeys(driver, templateName, 15, "AutoTest_DD");
 //		clickOn(driver, selectTemplateName, 30);
-		
+
 		driver.findElement(By.linkText("AutoTest_DD")).click();
-		
+
 	}
 
 	// click on template apply
@@ -206,15 +215,66 @@ public class NewProgramPage extends TestBase {
 	// 11. select PR print shop
 	public void selectPRPrintShop() {
 		// clickOn(driver, selectPrintShopPR, 15);
-		
+
 //		WebElement prDropDown = driver.findElement(By.cssSelector(".left-col > .panel-body .ng-pristine"));
 //		Select select1 = new Select(prDropDown);
 //		select1.selectByVisibleText("Sarine");
-		
+
 		{
 			WebElement dropdown = driver.findElement(By.cssSelector(".left-col > .panel-body .ng-pristine"));
 			dropdown.findElement(By.xpath("//option[. = 'Sarine']")).click();
-		}		
+		}
+
+	}
+
+	public void chooseShippingAddressPR() {
+
+		clickOn(driver, selectShippingAddressPR, 15);
+		// span[contains(text(),'55')]
+		clickOn(driver, chooseShippingAddressPR, 15);
+		clickOn(driver, applyShippingAddressPR, 15);
+
+	}
+
+	public void selectAccountRole() {
+		// clickOn(driver, checkProgramLeadRole, 15);
+		driver.findElement(By.cssSelector(".panel-body > div > .ng-scope:nth-child(1) > .ng-pristine")).click();
+
+	}
+
+	public void selectAccountActivity() {
+		// clickOn(driver, checkProgramMeasureQCActivity, 15);
+		driver.findElement(By.cssSelector(".right-col .panel-body > div > .ng-scope:nth-child(1) > .ng-pristine"))
+				.click();
+
+	}
+
+	public void applyMemberAccount() {
+		clickOn(driver, memberAccountApply, 15);
+	}
+
+	public void selectMeasuringSchemeLight() {
+		//clickOn(driver, checkMeasuringSchemeLight, 15);
+		driver.findElement(By.cssSelector(".panel-body > .checkbox > label > .ng-pristine")).click();
+		    
+	}
+
+	public void selectProgramActive() {
+		//clickOn(driver, programActive, 15);
+		driver.findElement(By.cssSelector(".form-group:nth-child(1) > label")).click();
+	}
+
+	public void saveProgram() {
+		clickOn(driver, programSave, 15);
+	}
+
+	public String verifyProgramSaveSuccessfully() throws Exception {
+		
+		Thread.sleep(1000);
+		WebElement confirmation =  driver.findElement(By.xpath("//div[@class='notifyjs-bootstrap-base notifyjs-bootstrap-success']"));
+		return confirmation.getText();
+		//return verifyProgramSaved.getText();
+		
 
 	}
 
