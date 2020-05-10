@@ -73,8 +73,9 @@ public class HomePageTest extends TestBase {
 
 		homePage.deleteProgram();
 		System.out.println(homePage.verifyDeleteProgramSuccessfully());
-		
-		Assert.assertEquals(homePage.verifyDeleteProgramSuccessfully(), "program " + NewProgramPage.myProgramName + " has been deleted successfully");
+
+		Assert.assertEquals(homePage.verifyDeleteProgramSuccessfully(),
+				"program " + NewProgramPage.myProgramName + " has been deleted successfully");
 
 	}
 
