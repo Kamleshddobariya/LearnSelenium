@@ -148,7 +148,6 @@ public class NewProgramPage extends TestBase {
 	// 5. create new template list
 	public void createNewTemplateList() throws Exception {
 
-		// driver.findElement(By.cssSelector(".panel:nth-child(11) .btn")).click();
 		Thread.sleep(5000);
 		// clickOn(driver, createTemplateList, 15);
 		createTemplateList.click();
@@ -184,41 +183,37 @@ public class NewProgramPage extends TestBase {
 
 	}
 
-	// click on template apply
+	// 7. click on template apply
 	public void clickOnTemplateApplyDD() {
 		clickOn(driver, templateApply, 15);
 	}
 
-	// 7. make bundle active
+	// 8. make bundle active
 	public void clickOnBundleActive() throws Exception {
 		Thread.sleep(3000);
 		clickOn(driver, bundleActive, 15);
 	}
 
-	// 8. click on apply to create bundle
+	// 9. click on apply to create bundle
 	public void clickOnApplyBundle() {
 		clickOn(driver, applyBundle, 15);
 	}
 
-	// 9. click on create member account list
+	// 10. click on create member account list
 	public void createNewMemberAccountList() {
 		createMemberAccountList.click();
 	}
 
-	// 10. select owner from member account list
+	// 11. select owner from member account list
 	public void selectMemberAccount() {
 		clickOn(driver, selectAccount, 15);
 		// sendKeys(driver, searchAccountName, 15, "India Profile team");
 		clickOn(driver, chooseAccount, 15);
 	}
 
-	// 11. select PR print shop
+	// 12. select PR print shop
 	public void selectPRPrintShop() {
 		// clickOn(driver, selectPrintShopPR, 15);
-
-//		WebElement prDropDown = driver.findElement(By.cssSelector(".left-col > .panel-body .ng-pristine"));
-//		Select select1 = new Select(prDropDown);
-//		select1.selectByVisibleText("Sarine");
 
 		{
 			WebElement dropdown = driver.findElement(By.cssSelector(".left-col > .panel-body .ng-pristine"));
@@ -227,21 +222,23 @@ public class NewProgramPage extends TestBase {
 
 	}
 
+	// 13. select Shipping address for PR
 	public void chooseShippingAddressPR() {
 
 		clickOn(driver, selectShippingAddressPR, 15);
-		// span[contains(text(),'55')]
 		clickOn(driver, chooseShippingAddressPR, 15);
 		clickOn(driver, applyShippingAddressPR, 15);
 
 	}
 
+	// 14. select account role
 	public void selectAccountRole() {
 		// clickOn(driver, checkProgramLeadRole, 15);
 		driver.findElement(By.cssSelector(".panel-body > div > .ng-scope:nth-child(1) > .ng-pristine")).click();
 
 	}
 
+	// 15. select account activity
 	public void selectAccountActivity() {
 		// clickOn(driver, checkProgramMeasureQCActivity, 15);
 		driver.findElement(By.cssSelector(".right-col .panel-body > div > .ng-scope:nth-child(1) > .ng-pristine"))
@@ -249,32 +246,37 @@ public class NewProgramPage extends TestBase {
 
 	}
 
+	// 16. apply memeber account
 	public void applyMemberAccount() {
 		clickOn(driver, memberAccountApply, 15);
 	}
 
+	// 17. select light measuring scheme
 	public void selectMeasuringSchemeLight() {
-		//clickOn(driver, checkMeasuringSchemeLight, 15);
+		// clickOn(driver, checkMeasuringSchemeLight, 15);
 		driver.findElement(By.cssSelector(".panel-body > .checkbox > label > .ng-pristine")).click();
-		    
+
 	}
 
+	// 18. check active program check box
 	public void selectProgramActive() {
-		//clickOn(driver, programActive, 15);
+		// clickOn(driver, programActive, 15);
 		driver.findElement(By.cssSelector(".form-group:nth-child(1) > label")).click();
 	}
 
+	// 19. save program
 	public void saveProgram() {
 		clickOn(driver, programSave, 15);
 	}
 
+	// 20. verify success message
 	public String verifyProgramSaveSuccessfully() throws Exception {
-		
+
 		Thread.sleep(1000);
-		WebElement confirmation =  driver.findElement(By.xpath("//div[@class='notifyjs-bootstrap-base notifyjs-bootstrap-success']"));
+		WebElement confirmation = driver
+				.findElement(By.xpath("//div[@class='notifyjs-bootstrap-base notifyjs-bootstrap-success']"));
 		return confirmation.getText();
-		//return verifyProgramSaved.getText();
-		
+		// return verifyProgramSaved.getText();
 
 	}
 
