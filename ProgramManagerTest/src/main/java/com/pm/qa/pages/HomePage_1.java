@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pm.qa.base.TestBase;
 
-public class HomePage extends TestBase {
+public class HomePage_1 extends TestBase {
 
 	// Page Factory - Object Repository
 	@FindBy(linkText = "Sign out")
@@ -49,7 +49,7 @@ public class HomePage extends TestBase {
 	// =============================================================================//
 
 	// current class object - initialize Elements with the help of Page Factory
-	public HomePage() {
+	public HomePage_1() {
 		PageFactory.initElements(driver, this);
 	}
 
@@ -74,11 +74,11 @@ public class HomePage extends TestBase {
 	}
 
 	// 4. enter program name in search box
-	public void enterSearchProgram(String myProgramName) {
-	//public void enterSearchProgram() throws Exception {
+//	public void enterSearchProgram(String myProgramName)
+	public void enterSearchProgram() throws Exception {
 
-		//sendKeys(driver, searchBox, 15, "AutoTest4");
-		sendKeys(driver, searchBox, 15, myProgramName);
+		sendKeys(driver, searchBox, 15, "AutoTest4");
+		// sendKeys(driver, searchBox, 15, myProgramName);
 
 	}
 
@@ -91,14 +91,14 @@ public class HomePage extends TestBase {
 
 	// 6. click on Edit Program
 	public void clickOnEditProgram() throws Exception {
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		clickOn(driver, editProgram, 15);
 
 	}
 
 	// 7. click on Deactivate program
 	public void clickOnProgramDeactive() throws Exception {
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 		clickOn(driver, programActive, 15);
 
 	}

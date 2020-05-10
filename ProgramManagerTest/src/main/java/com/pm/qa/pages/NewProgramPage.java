@@ -1,23 +1,22 @@
 package com.pm.qa.pages;
 
-import java.io.File;
 import java.util.List;
+import java.util.UUID;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pm.qa.base.TestBase;
 
 public class NewProgramPage extends TestBase {
+
+	public String uniqueProgramName, friendlyProgramName;
+	public static String myProgramName;
 
 	// Page Factory - Object Repository
 	@FindBy(xpath = "//span[contains(text(),'New')]")
@@ -129,8 +128,20 @@ public class NewProgramPage extends TestBase {
 	}
 
 	// 2. enter new Program name
-	public void enterProgramName() {
-		sendKeys(driver, programName, 15, prop.getProperty("programName"));
+	public String enterProgramName() {
+		// sendKeys(driver, programName, 15, prop.getProperty("programName"));
+
+		uniqueProgramName = UUID.randomUUID().toString();
+		System.out.println(uniqueProgramName);
+
+		friendlyProgramName = uniqueProgramName.substring(0, 4);
+		System.out.println(friendlyProgramName);
+
+		myProgramName = "AutoTest_" + friendlyProgramName;
+		sendKeys(driver, programName, 15, myProgramName);
+		System.out.println(myProgramName);
+
+		return myProgramName;
 	}
 
 	// 3. create New Bundle for New Program
@@ -282,13 +293,13 @@ public class NewProgramPage extends TestBase {
 
 //****************************************************************************************//
 
-	// explicitly wait method:
+	// explicitly wait method for sendKeys:
 	public static void sendKeys(WebDriver driver, WebElement element, int timeout, String value) {
 		new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
 		element.sendKeys(value);
 	}
 
-	// explicitly wait method:
+	// explicitly wait method for click action:
 	public static void clickOn(WebDriver driver, WebElement element, int timeout) {
 		new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
 		element.click();

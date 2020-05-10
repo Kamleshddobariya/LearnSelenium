@@ -71,7 +71,9 @@ public class NewProgramPageTest extends TestBase {
 		
 		System.out.println("*****************" + newprogramPage.verifyProgramSaveSuccessfully() + "****************");
 		
-		Assert.assertEquals(newprogramPage.verifyProgramSaveSuccessfully(), prop.getProperty("saveProgramConfirmation"));
+		//Assert.assertEquals(newprogramPage.verifyProgramSaveSuccessfully(), prop.getProperty("saveProgramConfirmation"));
+		
+		Assert.assertEquals(newprogramPage.verifyProgramSaveSuccessfully(), "program " + newprogramPage.myProgramName +" has been created successfully");
 
 	}
 
