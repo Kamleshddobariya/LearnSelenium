@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ProgramMangerTest" class="navigator-link">
-              <span class="suite-name border-failed">ProgramMangerTest</span>
+              <span class="suite-name border-passed">ProgramMangerTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-ProgramMangerTest" class="hide-methods failed suite-ProgramMangerTest"> (hide)</a> <!-- hide-methods failed suite-ProgramMangerTest -->
-                      <a href="#" panel-name="suite-ProgramMangerTest" class="show-methods failed suite-ProgramMangerTest"> (show)</a> <!-- show-methods failed suite-ProgramMangerTest -->
-                    </span>
-                    <div class="method-list-content failed suite-ProgramMangerTest">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ProgramMangerTest" title="com.pm.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyDeleteProgram">verifyDeleteProgram</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-ProgramMangerTest -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,22 @@
                     <div class="method-list-content passed suite-ProgramMangerTest">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ProgramMangerTest" title="com.pm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="verifyCorrectLogin">verifyCorrectLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ProgramMangerTest" title="com.pm.qa.testcases.NewProgramPageTest" class="method navigator-link" hash-for-method="verifyCreateNewProgram">verifyCreateNewProgram</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ProgramMangerTest" title="com.pm.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyDeleteProgram">verifyDeleteProgram</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ProgramMangerTest" title="com.pm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="verifyInCorrectLogin">verifyInCorrectLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ProgramMangerTest -->
@@ -131,9 +132,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ProgramMangerTest" class="panel ProgramMangerTest">
-          <div class="suite-ProgramMangerTest-class-failed">
+          <div class="suite-ProgramMangerTest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">com.pm.qa.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCorrectLogin">
+                  </a> <!-- verifyCorrectLogin -->
+                  <span class="method-name">verifyCorrectLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInCorrectLogin">
+                  </a> <!-- verifyInCorrectLogin -->
+                  <span class="method-name">verifyInCorrectLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ProgramMangerTest-class-passed -->
+          <div class="suite-ProgramMangerTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.pm.qa.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -142,44 +165,10 @@
                   <a name="verifyDeleteProgram">
                   </a> <!-- verifyDeleteProgram -->
                   <span class="method-name">verifyDeleteProgram</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WFH_KAMLESH&apos;, ip: &apos;192.168.3.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: cae33de31c0e3b855e64ae84d4df424e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.isDisplayed(EventFiringWebDriver.java:470)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.pm.qa.pages.HomePage.clickOn(HomePage.java:137)
-	at com.pm.qa.pages.HomePage.deleteProgram(HomePage.java:114)
-	at com.pm.qa.testcases.HomePageTest.verifyDeleteProgram(HomePageTest.java:74)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ProgramMangerTest-class-failed -->
+          </div> <!-- suite-ProgramMangerTest-class-passed -->
           <div class="suite-ProgramMangerTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -205,8 +194,12 @@ Session ID: cae33de31c0e3b855e64ae84d4df424e
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;ProgramMangerTest&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.pm.qa.ExtentReportListener.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;PMRegression&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.pm.qa.testcases.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;com.pm.qa.testcases.NewProgramPageTest&quot;/&gt;
       &lt;class name=&quot;com.pm.qa.testcases.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -222,7 +215,7 @@ Session ID: cae33de31c0e3b855e64ae84d4df424e
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">PMRegression (2 classes)</span>
+                <span class="test-name">PMRegression (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,20 +241,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCreateNewProgram')
 data.setCell(0, 2, 'com.pm.qa.testcases.NewProgramPageTest')
-data.setCell(0, 3, 38317);
+data.setCell(0, 3, 34909);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyDeleteProgram')
 data.setCell(1, 2, 'com.pm.qa.testcases.HomePageTest')
-data.setCell(1, 3, 20195);
+data.setCell(1, 3, 19571);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyCorrectLogin')
+data.setCell(2, 2, 'com.pm.qa.testcases.LoginPageTest')
+data.setCell(2, 3, 2480);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyInCorrectLogin')
+data.setCell(3, 2, 'com.pm.qa.testcases.LoginPageTest')
+data.setCell(3, 3, 732);
 window.suiteTableData['ProgramMangerTest']= { tableData: data, tableDiv: 'times-div-ProgramMangerTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-ProgramMangerTest">
               </div> <!-- times-div-ProgramMangerTest -->
             </div> <!-- times-div -->
@@ -296,35 +297,60 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pm.qa.testcases.NewProgramPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCreateNewProgram</span>
-                <span class="method-start">18346 ms</span>
+                <span class="method-name">verifyCorrectLogin</span>
+                <span class="method-start">17541 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56665 ms</span>
+                <span class="method-start">20023 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInCorrectLogin</span>
+                <span class="method-start">30977 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31709 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pm.qa.testcases.NewProgramPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateNewProgram</span>
+                <span class="method-start">44554 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">79464 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">56666 ms</span>
+                <span class="method-start">79464 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyDeleteProgram</span>
-                <span class="method-start">75421 ms</span>
+                <span class="method-start">91923 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">95618 ms</span>
+                <span class="method-start">111495 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
