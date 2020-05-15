@@ -1,65 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-14T14:50:20 IST" name="ProgramMangerTest" finished-at="2020-05-14T14:52:11 IST" duration-ms="111511">
+  <suite started-at="2020-05-15T19:39:14 IST" name="Default suite" finished-at="2020-05-15T19:39:51 IST" duration-ms="37002">
     <groups>
     </groups>
-    <test started-at="2020-05-14T14:50:20 IST" name="PMRegression" finished-at="2020-05-14T14:52:11 IST" duration-ms="111511">
-      <class name="com.pm.qa.testcases.NewProgramPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.NewProgramPageTest@96def03]" started-at="2020-05-14T14:50:52 IST" name="setUp" finished-at="2020-05-14T14:51:04 IST" duration-ms="12272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateNewProgram()[pri:1, instance:com.pm.qa.testcases.NewProgramPageTest@96def03]" started-at="2020-05-14T14:51:04 IST" name="verifyCreateNewProgram" finished-at="2020-05-14T14:51:39 IST" duration-ms="34909" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCreateNewProgram -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.NewProgramPageTest@96def03]" started-at="2020-05-14T14:51:39 IST" name="tearDown" finished-at="2020-05-14T14:51:39 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.pm.qa.testcases.NewProgramPageTest -->
+    <test started-at="2020-05-15T19:39:14 IST" name="Default test" finished-at="2020-05-15T19:39:51 IST" duration-ms="37002">
       <class name="com.pm.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@5ccddd20]" started-at="2020-05-14T14:51:39 IST" name="setUp" finished-at="2020-05-14T14:51:52 IST" duration-ms="12459" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1e802ef9]" started-at="2020-05-15T19:39:14 IST" name="setUp" finished-at="2020-05-15T19:39:29 IST" duration-ms="15181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDeleteProgram()[pri:1, instance:com.pm.qa.testcases.HomePageTest@5ccddd20]" started-at="2020-05-14T14:51:52 IST" name="verifyDeleteProgram" finished-at="2020-05-14T14:52:11 IST" duration-ms="19571" status="PASS">
+        <test-method signature="verifyEditProgram()[pri:2, instance:com.pm.qa.testcases.HomePageTest@1e802ef9]" started-at="2020-05-15T19:39:29 IST" name="verifyEditProgram" finished-at="2020-05-15T19:39:51 IST" duration-ms="21802" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteProgram -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@5ccddd20]" started-at="2020-05-14T14:52:11 IST" name="tearDown" finished-at="2020-05-14T14:52:11 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyEditProgram -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1e802ef9]" started-at="2020-05-15T19:39:51 IST" name="tearDown" finished-at="2020-05-15T19:39:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.pm.qa.testcases.HomePageTest -->
-      <class name="com.pm.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@6e0dec4a]" started-at="2020-05-14T14:50:20 IST" name="setUp" finished-at="2020-05-14T14:50:37 IST" duration-ms="17541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyCorrectLogin()[pri:1, instance:com.pm.qa.testcases.LoginPageTest@6e0dec4a]" started-at="2020-05-14T14:50:37 IST" name="verifyCorrectLogin" finished-at="2020-05-14T14:50:40 IST" duration-ms="2480" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@6e0dec4a]" started-at="2020-05-14T14:50:40 IST" name="tearDown" finished-at="2020-05-14T14:50:40 IST" duration-ms="572" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@6e0dec4a]" started-at="2020-05-14T14:50:40 IST" name="setUp" finished-at="2020-05-14T14:50:51 IST" duration-ms="10380" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyInCorrectLogin()[pri:2, instance:com.pm.qa.testcases.LoginPageTest@6e0dec4a]" started-at="2020-05-14T14:50:51 IST" name="verifyInCorrectLogin" finished-at="2020-05-14T14:50:52 IST" duration-ms="732" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInCorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@6e0dec4a]" started-at="2020-05-14T14:50:52 IST" name="tearDown" finished-at="2020-05-14T14:50:52 IST" duration-ms="571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.pm.qa.testcases.LoginPageTest -->
-    </test> <!-- PMRegression -->
-  </suite> <!-- ProgramMangerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

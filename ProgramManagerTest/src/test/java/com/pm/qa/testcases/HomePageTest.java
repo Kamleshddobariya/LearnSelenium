@@ -37,31 +37,48 @@ public class HomePageTest extends TestBase {
 	public void verifySearchByProgramName() throws Exception {
 
 		homePage.clickInSearchBox();
-		homePage.enterSearchProgram(newprogramPage.myProgramName);
-		Assert.assertEquals(homePage.verifySearchSucessfully(), "AccessManagerChanges");
+		homePage.enterSearchProgram(NewProgramPage.myProgramName);
+//		Assert.assertEquals(homePage.verifySearchSucessfully(), "AccessManagerChanges");
 
-		System.out.println("Recently created program name: " + newprogramPage.myProgramName);
-		homePage.enterSearchProgram(newprogramPage.myProgramName);
+		System.out.println("Recently created program name: " + NewProgramPage.myProgramName);
+		homePage.enterSearchProgram(NewProgramPage.myProgramName);
 
 		System.out.println("Searched program name: " + homePage.verifySearchSucessfully());
 
-		Assert.assertEquals(homePage.verifySearchSucessfully(), newprogramPage.myProgramName);
+		Assert.assertEquals(homePage.verifySearchSucessfully(), NewProgramPage.myProgramName);
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void verifyEditProgram() throws Exception {
 
 		homePage.clickInSearchBox();
-		homePage.enterSearchProgram(newprogramPage.myProgramName);
+		homePage.enterSearchProgram(NewProgramPage.myProgramName);
 
 		homePage.clickOnEditProgram();
 		homePage.clickOnProgramDeactive();
-		homePage.saveProgram();
 
+		homePage.clickOnEditProgramScope();
+		homePage.clickOnProgramLocation();
+		homePage.chooseProgramLocation();
+		homePage.clickOnSaveScope();
+
+		homePage.saveProgram();
+		homePage.clickOnEditProgram();
+
+		homePage.clickOnEditProgramScope();
+		homePage.verifyProgramLocation();
+		System.out.println(homePage.verifyProgramLocation());
+
+		Assert.assertEquals(homePage.verifyProgramLocation(), "China");
+		
+		homePage.clickOnSaveScope();
+		homePage.clickOnProgramActive();
+		homePage.saveProgram();
+		
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 3, enabled = false)
 	public void verifyDeleteProgram() throws Exception {
 
 		homePage.clickInSearchBox();

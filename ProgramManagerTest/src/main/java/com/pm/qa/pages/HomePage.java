@@ -1,5 +1,7 @@
 package com.pm.qa.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,6 +38,15 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//label[contains(text(),'Active')]//input")
 	public WebElement programActive;
+
+	@FindBy(id = "programLocation")
+	public WebElement programLocation;
+
+	@FindBy(xpath = "//form[@id='scopeForm']//div//div//button[contains(text(),'Save')]")
+	public WebElement scopeSave;
+
+	@FindBy(xpath = "//span[@class='glyphicon glyphicon-list']")
+	public WebElement editProgramScope;
 
 	@FindBy(xpath = "//button[contains(text(),'Save')]")
 	public WebElement programSave;
@@ -75,10 +86,10 @@ public class HomePage extends TestBase {
 
 	// 4. enter program name in search box
 	public void enterSearchProgram(String myProgramName) {
-	//public void enterSearchProgram() throws Exception {
+		// public void enterSearchProgram() throws Exception {
 
-		//sendKeys(driver, searchBox, 15, "AutoTest4");
-		sendKeys(driver, searchBox, 15, myProgramName);
+		sendKeys(driver, searchBox, 15, "IAMChanges");
+		// sendKeys(driver, searchBox, 15, myProgramName);
 
 	}
 
@@ -98,7 +109,54 @@ public class HomePage extends TestBase {
 
 	// 7. click on Deactivate program
 	public void clickOnProgramDeactive() throws Exception {
-		Thread.sleep(6000);
+		Thread.sleep(10000);
+		clickOn(driver, programActive, 30);
+
+	}
+
+	// . edit program scope
+	public void clickOnEditProgramScope() {
+
+//		clickOn(driver, editProgramScope, 15);
+		driver.findElement(By.cssSelector(".glyphicon-list")).click();
+
+	}
+
+	// . click on Program Location
+	public void clickOnProgramLocation() {
+		// driver.findElement(By.id("programLocation")).click();
+		clickOn(driver, programLocation, 15);
+	}
+
+	// . choose Program Location
+	public void chooseProgramLocation() {
+
+		String China_xpath = "//option[. = 'China']";
+//		{
+//			WebElement dropdown = driver.findElement(By.id("programLocation"));
+//			dropdown.findElement(By.xpath("//option[. = 'Global']")).click();
+//		}
+
+		selectDropDownValue(China_xpath, "China");
+	}
+
+	// . save Scope
+	public void clickOnSaveScope() {
+		clickOn(driver, scopeSave, 15);
+
+	}
+
+	// . verify Program Location Value
+	public String verifyProgramLocation() {
+
+		return programLocation.getText();
+
+	}
+
+	
+	//. click on Program active
+	public void clickOnProgramActive() throws Exception {
+
 		clickOn(driver, programActive, 15);
 
 	}
@@ -136,6 +194,23 @@ public class HomePage extends TestBase {
 	public static void clickOn(WebDriver driver, WebElement element, int timeout) {
 		new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
+	}
+
+	// to handle drop down list values
+	public static void selectDropDownValue(String xpathValue, String value) {
+
+		List<WebElement> dropdownlist = driver.findElements(By.xpath(xpathValue));
+		System.out.println(dropdownlist.size());
+
+		for (int j = 0; j < dropdownlist.size(); j++) {
+			String dropDownVal = dropdownlist.get(j).getText();
+			System.out.println(dropDownVal);
+
+			if (dropDownVal.equals(value)) {
+				dropdownlist.get(j).click();
+				break;
+			}
+		}
 	}
 
 }

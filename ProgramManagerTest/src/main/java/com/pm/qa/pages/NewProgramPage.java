@@ -129,7 +129,7 @@ public class NewProgramPage extends TestBase {
 
 	// 2. enter new Program name
 	public String enterProgramName() {
-		// sendKeys(driver, programName, 15, prop.getProperty("programName"));
+//		 sendKeys(driver, programName, 15, prop.getProperty("programName"));
 
 		uniqueProgramName = UUID.randomUUID().toString();
 		System.out.println(uniqueProgramName);
