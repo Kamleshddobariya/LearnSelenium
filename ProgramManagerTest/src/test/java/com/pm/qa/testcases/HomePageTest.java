@@ -74,7 +74,9 @@ public class HomePageTest extends TestBase {
 		homePage.clickOnSaveScope();
 		homePage.clickOnProgramActive();
 		homePage.saveProgram();
-
+		
+		homePage.clearSearch(); 
+		
 	}
 
 	@Test(priority = 3, enabled = true)
@@ -97,7 +99,7 @@ public class HomePageTest extends TestBase {
 
 	@AfterMethod
 	public void tearDown() {
-		// driver.quit();
+		 driver.quit();
 	}
 
 }

@@ -88,19 +88,20 @@ public class HomePage extends TestBase {
 	// 4. enter program name in search box
 	public void enterSearchProgram(String myProgramName) {
 
-
-		//sendKeys(driver, searchBox, 15, "IAMChanges");
+		// sendKeys(driver, searchBox, 15, "IAMChanges");
 		sendKeys(driver, searchBox, 15, myProgramName);
 
 	}
 
 	// 5. verify searched program name
-	public String verifySearchSucessfully() {
+	public String verifySearchSucessfully() throws Exception {
 
+		Thread.sleep(2000);
 		return searchProgramNameValue.getText();
 
 	}
-
+	
+	
 	// 6. click on Edit Program
 	public void clickOnEditProgram() throws Exception {
 		Thread.sleep(5000);
@@ -118,7 +119,7 @@ public class HomePage extends TestBase {
 	// 8. edit program scope
 	public void clickOnEditProgramScope() throws Exception {
 
-		Thread.sleep(3000);
+		Thread.sleep(3500);
 //		clickOn(driver, editProgramScope, 15);
 		driver.findElement(By.cssSelector(".glyphicon-list")).click();
 
@@ -157,8 +158,9 @@ public class HomePage extends TestBase {
 
 	// 13. click on Program active
 	public void clickOnProgramActive() throws Exception {
-
-		clickOn(driver, programActive, 15);
+		
+		//driver.findElement(By.cssSelector(".form-group:nth-child(1) > label")).click();
+		clickOn(driver, programActive, 30);
 
 	}
 
@@ -168,6 +170,15 @@ public class HomePage extends TestBase {
 		clickOn(driver, programSave, 15);
 	}
 
+	
+	// clear search
+	public void clearSearch() throws Exception {
+		
+		Thread.sleep(3000);
+		searchBox.clear();
+		
+	}
+	
 	// 15. delete program
 	public void deleteProgram() {
 		clickOn(driver, deleteProgram, 15);
@@ -213,5 +224,6 @@ public class HomePage extends TestBase {
 			}
 		}
 	}
+
 
 }
