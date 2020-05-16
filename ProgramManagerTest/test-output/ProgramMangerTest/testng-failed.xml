@@ -10,7 +10,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyEditProgram"/>
+          <include name="verifySearchByProgramName"/>
         </methods>
       </class> <!-- com.pm.qa.testcases.HomePageTest -->
     </classes>
