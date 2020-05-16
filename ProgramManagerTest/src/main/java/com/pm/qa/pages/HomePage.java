@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pm.qa.base.TestBase;
@@ -115,8 +116,9 @@ public class HomePage extends TestBase {
 	}
 
 	// . edit program scope
-	public void clickOnEditProgramScope() {
+	public void clickOnEditProgramScope() throws Exception {
 
+		Thread.sleep(3000);
 //		clickOn(driver, editProgramScope, 15);
 		driver.findElement(By.cssSelector(".glyphicon-list")).click();
 
@@ -147,14 +149,16 @@ public class HomePage extends TestBase {
 	}
 
 	// . verify Program Location Value
-	public String verifyProgramLocation() {
+	public String verifyProgramLocation() throws Exception {
 
-		return programLocation.getText();
+		Thread.sleep(3000);
+		
+		String selectedOption = new Select(driver.findElement(By.xpath("//select[@id='programLocation']"))).getFirstSelectedOption().getText();
+		return selectedOption;
 
 	}
 
-	
-	//. click on Program active
+	// . click on Program active
 	public void clickOnProgramActive() throws Exception {
 
 		clickOn(driver, programActive, 15);

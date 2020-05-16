@@ -16,7 +16,7 @@ import com.pm.qa.base.TestBase;
 
 public class TestUtil extends TestBase {
 
-	public static long PAGE_LOAD_TIMEOUT = 30;
+	public static long PAGE_LOAD_TIMEOUT = 120;
 	public static long IMPLICIT_WAIT = 30;
 		
 	public static String TESTDATA_SHEET_PATH = "E:\\eclipse-workspace\\USMTestData\\PMTestData.xlsx";
