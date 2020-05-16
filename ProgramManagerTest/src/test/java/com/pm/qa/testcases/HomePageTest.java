@@ -33,7 +33,7 @@ public class HomePageTest extends TestBase {
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void verifySearchByProgramName() throws Exception {
 
 		homePage.clickInSearchBox();
@@ -41,7 +41,6 @@ public class HomePageTest extends TestBase {
 //		Assert.assertEquals(homePage.verifySearchSucessfully(), "AccessManagerChanges");
 
 		System.out.println("Recently created program name: " + NewProgramPage.myProgramName);
-		homePage.enterSearchProgram(NewProgramPage.myProgramName);
 
 		System.out.println("Searched program name: " + homePage.verifySearchSucessfully());
 
@@ -71,14 +70,14 @@ public class HomePageTest extends TestBase {
 		System.out.println(homePage.verifyProgramLocation());
 
 		Assert.assertEquals(homePage.verifyProgramLocation(), "China");
-		
+
 		homePage.clickOnSaveScope();
 		homePage.clickOnProgramActive();
 		homePage.saveProgram();
-		
+
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void verifyDeleteProgram() throws Exception {
 
 		homePage.clickInSearchBox();

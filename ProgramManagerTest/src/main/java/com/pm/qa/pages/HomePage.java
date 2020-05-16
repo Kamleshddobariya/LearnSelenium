@@ -87,10 +87,10 @@ public class HomePage extends TestBase {
 
 	// 4. enter program name in search box
 	public void enterSearchProgram(String myProgramName) {
-		// public void enterSearchProgram() throws Exception {
 
-		sendKeys(driver, searchBox, 15, "IAMChanges");
-		// sendKeys(driver, searchBox, 15, myProgramName);
+
+		//sendKeys(driver, searchBox, 15, "IAMChanges");
+		sendKeys(driver, searchBox, 15, myProgramName);
 
 	}
 
@@ -110,12 +110,12 @@ public class HomePage extends TestBase {
 
 	// 7. click on Deactivate program
 	public void clickOnProgramDeactive() throws Exception {
-		Thread.sleep(10000);
+		Thread.sleep(6000);
 		clickOn(driver, programActive, 30);
 
 	}
 
-	// . edit program scope
+	// 8. edit program scope
 	public void clickOnEditProgramScope() throws Exception {
 
 		Thread.sleep(3000);
@@ -124,63 +124,60 @@ public class HomePage extends TestBase {
 
 	}
 
-	// . click on Program Location
+	// 9. click on Program Location
 	public void clickOnProgramLocation() {
 		// driver.findElement(By.id("programLocation")).click();
 		clickOn(driver, programLocation, 15);
 	}
 
-	// . choose Program Location
+	// 10. choose Program Location
 	public void chooseProgramLocation() {
 
 		String China_xpath = "//option[. = 'China']";
-//		{
-//			WebElement dropdown = driver.findElement(By.id("programLocation"));
-//			dropdown.findElement(By.xpath("//option[. = 'Global']")).click();
-//		}
 
 		selectDropDownValue(China_xpath, "China");
 	}
 
-	// . save Scope
+	// 11. save Scope
 	public void clickOnSaveScope() {
 		clickOn(driver, scopeSave, 15);
 
 	}
 
-	// . verify Program Location Value
+	// 12. verify Program Location Value
 	public String verifyProgramLocation() throws Exception {
 
 		Thread.sleep(3000);
-		
-		String selectedOption = new Select(driver.findElement(By.xpath("//select[@id='programLocation']"))).getFirstSelectedOption().getText();
+
+		String selectedOption = new Select(driver.findElement(By.xpath("//select[@id='programLocation']")))
+				.getFirstSelectedOption().getText();
 		return selectedOption;
 
 	}
 
-	// . click on Program active
+	// 13. click on Program active
 	public void clickOnProgramActive() throws Exception {
 
 		clickOn(driver, programActive, 15);
 
 	}
 
-	// . save program
+	// 14. save program
 	public void saveProgram() throws Exception {
 		Thread.sleep(3000);
 		clickOn(driver, programSave, 15);
 	}
 
-	// . delete program
+	// 15. delete program
 	public void deleteProgram() {
 		clickOn(driver, deleteProgram, 15);
 		clickOn(driver, deleteOKProgram, 15);
 	}
 
-	// . delete program
+	// 16. verify delete program
 	public String verifyDeleteProgramSuccessfully() throws Exception {
 
-		Thread.sleep(1000);
+		Thread.sleep(1500);
 		WebElement confirmation = driver
 				.findElement(By.xpath("//div[@class='notifyjs-bootstrap-base notifyjs-bootstrap-success']"));
 		return confirmation.getText();
