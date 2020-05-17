@@ -110,7 +110,7 @@ public class HomePage extends TestBase {
 
 	// 7. click on Deactivate program
 	public void clickOnProgramDeactive() throws Exception {
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		clickOn(driver, programActive, 30);
 
 	}
