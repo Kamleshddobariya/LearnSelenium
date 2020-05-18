@@ -63,7 +63,7 @@ public class NewProgramPageTest extends TestBase {
 
 		newprogramPage.selectMeasuringSchemeLight();
 
-		newprogramPage.selectProgramActive();
+		//newprogramPage.selectProgramActive();
 
 		newprogramPage.saveProgram();
 		

@@ -55,7 +55,7 @@ public class HomePageTest extends TestBase {
 		homePage.enterSearchProgram(NewProgramPage.myProgramName);
 
 		homePage.clickOnEditProgram();
-		homePage.clickOnProgramDeactive();
+		// homePage.clickOnProgramDeactive();
 
 		homePage.clickOnEditProgramScope();
 		homePage.clickOnProgramLocation();
@@ -72,22 +72,49 @@ public class HomePageTest extends TestBase {
 		Assert.assertEquals(homePage.verifyProgramLocation(), "China");
 
 		homePage.clickOnSaveScope();
-		homePage.clickOnProgramActive();
+		// homePage.clickOnProgramActive();
 		homePage.saveProgram();
-		
-		homePage.clearSearch(); 
-		
+
+		// homePage.clearSearch();
+
 	}
 
 	@Test(priority = 3, enabled = true)
-	public void verifyDeleteProgram() throws Exception {
+	public void verifyActiveProgram() throws Exception {
 
 		homePage.clickInSearchBox();
 		homePage.enterSearchProgram(NewProgramPage.myProgramName);
 
 		homePage.clickOnEditProgram();
-		homePage.clickOnProgramDeactive();
+		homePage.clickOnProgramActive();
 		homePage.saveProgram();
+
+		homePage.clickOnEditProgram();
+		homePage.verifyActiveProgram();
+
+		System.out.println(homePage.verifyActiveProgram());
+		Assert.assertEquals(homePage.verifyActiveProgram(), false, "Not able to get the value");
+
+		homePage.clickOnProgramDeactive();
+
+		homePage.verifyActiveProgram();
+		System.out.println(homePage.verifyActiveProgram());
+
+		homePage.saveProgram();
+
+		homePage.clearSearch();
+
+	}
+
+	@Test(priority = 4, enabled = true)
+	public void verifyDeleteProgram() throws Exception {
+
+		homePage.clickInSearchBox();
+		homePage.enterSearchProgram(NewProgramPage.myProgramName);
+
+//		homePage.clickOnEditProgram();
+//		homePage.clickOnProgramDeactive();
+//		homePage.saveProgram();
 
 		homePage.deleteProgram();
 		System.out.println(homePage.verifyDeleteProgramSuccessfully());
@@ -99,7 +126,7 @@ public class HomePageTest extends TestBase {
 
 	@AfterMethod
 	public void tearDown() {
-		 driver.quit();
+		driver.quit();
 	}
 
 }

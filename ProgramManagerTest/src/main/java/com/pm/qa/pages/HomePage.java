@@ -34,7 +34,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//span[contains(text(),'New')]")
 	public WebElement createNewProgram;
 
-	@FindBy(xpath = "//span[contains(@class,'glyphicon glyphicon-pencil')]")
+	@FindBy(xpath = "//span[@class='glyphicon glyphicon-pencil']")
 	public WebElement editProgram;
 
 	@FindBy(xpath = "//label[contains(text(),'Active')]//input")
@@ -88,7 +88,7 @@ public class HomePage extends TestBase {
 	// 4. enter program name in search box
 	public void enterSearchProgram(String myProgramName) {
 
-		// sendKeys(driver, searchBox, 15, "IAMChanges");
+		//sendKeys(driver, searchBox, 15, "IAMChanges");
 		sendKeys(driver, searchBox, 15, myProgramName);
 
 	}
@@ -96,7 +96,7 @@ public class HomePage extends TestBase {
 	// 5. verify searched program name
 	public String verifySearchSucessfully() throws Exception {
 
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		return searchProgramNameValue.getText();
 
 	}
@@ -104,23 +104,35 @@ public class HomePage extends TestBase {
 	// 6. click on Edit Program
 	public void clickOnEditProgram() throws Exception {
 		Thread.sleep(5000);
-		clickOn(driver, editProgram, 15);
+
+		clickOn(driver, editProgram, 30);
+		Thread.sleep(5000);
 
 	}
 
 	// 7. click on Deactivate program
 	public void clickOnProgramDeactive() throws Exception {
-		Thread.sleep(10000);
-		clickOn(driver, programActive, 30);
+		// Thread.sleep(10000);
+		// clickOn(driver, programActive, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement activeProgramCheckbox = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".form-group:nth-child(1) > label")));
+
+		activeProgramCheckbox.click();
 
 	}
 
 	// 8. edit program scope
 	public void clickOnEditProgramScope() throws Exception {
 
-		Thread.sleep(3500);
-//		clickOn(driver, editProgramScope, 15);
-		driver.findElement(By.cssSelector(".glyphicon-list")).click();
+		Thread.sleep(6000);
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement activeProgramCheckbox = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Edit Program')]")));
+
+		clickOn(driver, editProgramScope, 30);
+		// driver.findElement(By.cssSelector(".glyphicon-list")).click();
 
 	}
 
@@ -157,8 +169,17 @@ public class HomePage extends TestBase {
 
 	// 13. click on Program active
 	public void clickOnProgramActive() throws Exception {
+		// Thread.sleep(10000);
+		// clickOn(driver, programActive, 30);
+		// span[contains(text(),'Edit Program')]
 
-		clickOn(driver, programActive, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 40);
+		WebElement activeProgramCheckbox = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Edit Program')]")));
+
+		clickOn(driver, programActive, 40);
+		// driver.findElement(By.cssSelector(".form-group:nth-child(1) >
+		// label")).click();
 
 	}
 
@@ -166,6 +187,13 @@ public class HomePage extends TestBase {
 	public void saveProgram() throws Exception {
 		Thread.sleep(3000);
 		clickOn(driver, programSave, 15);
+	}
+
+	public boolean verifyActiveProgram() {
+
+		return driver.findElement(By.cssSelector(".panel-body > .checkbox > label > .ng-pristine")).isEnabled();
+		// return programActive.isSelected();
+
 	}
 
 	// clear search
@@ -177,7 +205,8 @@ public class HomePage extends TestBase {
 	}
 
 	// 15. delete program
-	public void deleteProgram() {
+	public void deleteProgram() throws Exception {
+		Thread.sleep(3000);
 		clickOn(driver, deleteProgram, 15);
 		clickOn(driver, deleteOKProgram, 15);
 	}
