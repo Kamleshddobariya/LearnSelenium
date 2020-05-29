@@ -114,7 +114,7 @@ public class HomePage extends TestBase {
 	public void clickOnProgramDeactive() throws Exception {
 		// Thread.sleep(10000);
 		// clickOn(driver, programActive, 30);
-		WebDriverWait wait = new WebDriverWait(driver, 120);
+		WebDriverWait wait = new WebDriverWait(driver, 90);
 		WebElement activeProgramCheckbox = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".form-group:nth-child(1) > label")));
 
