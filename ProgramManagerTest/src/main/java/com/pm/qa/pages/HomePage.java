@@ -114,7 +114,7 @@ public class HomePage extends TestBase {
 	public void clickOnProgramDeactive() throws Exception {
 		// Thread.sleep(10000);
 		// clickOn(driver, programActive, 30);
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 120);
 		WebElement activeProgramCheckbox = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".form-group:nth-child(1) > label")));
 
@@ -173,13 +173,14 @@ public class HomePage extends TestBase {
 		// clickOn(driver, programActive, 30);
 		// span[contains(text(),'Edit Program')]
 
-		WebDriverWait wait = new WebDriverWait(driver, 40);
-		WebElement activeProgramCheckbox = wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Edit Program')]")));
+		WebDriverWait wait = new WebDriverWait(driver, 120);
+		WebElement activeProgramCheckbox = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".form-group:nth-child(1) > label")));
 
-		clickOn(driver, programActive, 40);
-		// driver.findElement(By.cssSelector(".form-group:nth-child(1) >
-		// label")).click();
+		activeProgramCheckbox.click();
+		//clickOn(driver, programActive, 60);
+	
+		//driver.findElement(By.cssSelector(".form-group:nth-child(1) > label")).click();
 
 	}
 

@@ -2,96 +2,96 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-18T13:56:19 IST" name="ProgramMangerTest" finished-at="2020-05-18T14:03:13 IST" duration-ms="414405">
+  <suite started-at="2020-05-28T17:58:26 IST" name="ProgramMangerTest" finished-at="2020-05-28T18:02:50 IST" duration-ms="264077">
     <groups>
     </groups>
-    <test started-at="2020-05-18T13:56:19 IST" name="PMRegression" finished-at="2020-05-18T14:03:13 IST" duration-ms="414405">
+    <test started-at="2020-05-28T17:58:26 IST" name="PMRegression" finished-at="2020-05-28T18:02:50 IST" duration-ms="264077">
       <class name="com.pm.qa.testcases.NewProgramPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.NewProgramPageTest@5ccddd20]" started-at="2020-05-18T13:57:59 IST" name="setUp" finished-at="2020-05-18T13:58:39 IST" duration-ms="39959" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.NewProgramPageTest@5ccddd20]" started-at="2020-05-28T17:59:06 IST" name="setUp" finished-at="2020-05-28T17:59:19 IST" duration-ms="12706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateNewProgram()[pri:1, instance:com.pm.qa.testcases.NewProgramPageTest@5ccddd20]" started-at="2020-05-18T13:58:39 IST" name="verifyCreateNewProgram" finished-at="2020-05-18T13:59:22 IST" duration-ms="42658" status="PASS">
+        <test-method signature="verifyCreateNewProgram()[pri:1, instance:com.pm.qa.testcases.NewProgramPageTest@5ccddd20]" started-at="2020-05-28T17:59:19 IST" name="verifyCreateNewProgram" finished-at="2020-05-28T17:59:54 IST" duration-ms="34974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewProgram -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.NewProgramPageTest@5ccddd20]" started-at="2020-05-18T13:59:22 IST" name="tearDown" finished-at="2020-05-18T13:59:22 IST" duration-ms="585" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.NewProgramPageTest@5ccddd20]" started-at="2020-05-28T17:59:54 IST" name="tearDown" finished-at="2020-05-28T17:59:55 IST" duration-ms="584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.pm.qa.testcases.NewProgramPageTest -->
       <class name="com.pm.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-18T13:56:19 IST" name="setUp" finished-at="2020-05-18T13:57:07 IST" duration-ms="48478" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-28T17:58:26 IST" name="setUp" finished-at="2020-05-28T17:58:40 IST" duration-ms="14061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCorrectLogin()[pri:1, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-18T13:57:07 IST" name="verifyCorrectLogin" finished-at="2020-05-18T13:57:17 IST" duration-ms="9650" status="PASS">
+        <test-method signature="verifyCorrectLogin()[pri:1, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-28T17:58:40 IST" name="verifyCorrectLogin" finished-at="2020-05-28T17:58:43 IST" duration-ms="3080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-18T13:57:17 IST" name="tearDown" finished-at="2020-05-18T13:57:17 IST" duration-ms="574" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-28T17:58:43 IST" name="tearDown" finished-at="2020-05-28T17:58:43 IST" duration-ms="578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-18T13:57:17 IST" name="setUp" finished-at="2020-05-18T13:57:54 IST" duration-ms="36153" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-28T17:58:43 IST" name="setUp" finished-at="2020-05-28T17:59:05 IST" duration-ms="21500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyInCorrectLogin()[pri:2, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-18T13:57:54 IST" name="verifyInCorrectLogin" finished-at="2020-05-18T13:57:59 IST" duration-ms="4866" status="PASS">
+        <test-method signature="verifyInCorrectLogin()[pri:2, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-28T17:59:05 IST" name="verifyInCorrectLogin" finished-at="2020-05-28T17:59:06 IST" duration-ms="946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInCorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-18T13:57:59 IST" name="tearDown" finished-at="2020-05-18T13:57:59 IST" duration-ms="569" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.LoginPageTest@96def03]" started-at="2020-05-28T17:59:06 IST" name="tearDown" finished-at="2020-05-28T17:59:06 IST" duration-ms="572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.pm.qa.testcases.LoginPageTest -->
       <class name="com.pm.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T13:59:22 IST" name="setUp" finished-at="2020-05-18T13:59:52 IST" duration-ms="29332" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T17:59:55 IST" name="setUp" finished-at="2020-05-28T18:00:22 IST" duration-ms="26860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchByProgramName()[pri:1, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T13:59:52 IST" name="verifySearchByProgramName" finished-at="2020-05-18T14:00:03 IST" duration-ms="11835" status="PASS">
+        <test-method signature="verifySearchByProgramName()[pri:1, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:00:22 IST" name="verifySearchByProgramName" finished-at="2020-05-28T18:00:33 IST" duration-ms="11295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchByProgramName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:00:03 IST" name="tearDown" finished-at="2020-05-18T14:00:04 IST" duration-ms="571" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:00:33 IST" name="tearDown" finished-at="2020-05-28T18:00:33 IST" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:00:04 IST" name="setUp" finished-at="2020-05-18T14:00:45 IST" duration-ms="41383" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:00:33 IST" name="setUp" finished-at="2020-05-28T18:00:51 IST" duration-ms="17869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyEditProgram()[pri:2, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:00:45 IST" name="verifyEditProgram" finished-at="2020-05-18T14:01:38 IST" duration-ms="52309" status="PASS">
+        <test-method signature="verifyEditProgram()[pri:2, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:00:51 IST" name="verifyEditProgram" finished-at="2020-05-28T18:01:42 IST" duration-ms="50502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditProgram -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:01:38 IST" name="tearDown" finished-at="2020-05-18T14:01:38 IST" duration-ms="581" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:01:42 IST" name="tearDown" finished-at="2020-05-28T18:01:42 IST" duration-ms="582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:01:38 IST" name="setUp" finished-at="2020-05-18T14:02:06 IST" duration-ms="27571" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:01:42 IST" name="setUp" finished-at="2020-05-28T18:01:55 IST" duration-ms="12999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyActiveProgram()[pri:3, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:02:06 IST" name="verifyActiveProgram" finished-at="2020-05-18T14:02:38 IST" duration-ms="32396" status="PASS">
+        <test-method signature="verifyActiveProgram()[pri:3, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:01:55 IST" name="verifyActiveProgram" finished-at="2020-05-28T18:02:26 IST" duration-ms="30907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyActiveProgram -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:02:38 IST" name="tearDown" finished-at="2020-05-18T14:02:39 IST" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:02:26 IST" name="tearDown" finished-at="2020-05-28T18:02:27 IST" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:02:39 IST" name="setUp" finished-at="2020-05-18T14:03:05 IST" duration-ms="25722" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:02:27 IST" name="setUp" finished-at="2020-05-28T18:02:42 IST" duration-ms="14862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDeleteProgram()[pri:4, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:03:05 IST" name="verifyDeleteProgram" finished-at="2020-05-18T14:03:13 IST" duration-ms="8015" status="PASS">
+        <test-method signature="verifyDeleteProgram()[pri:4, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:02:42 IST" name="verifyDeleteProgram" finished-at="2020-05-28T18:02:49 IST" duration-ms="7446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteProgram -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-18T14:03:13 IST" name="tearDown" finished-at="2020-05-18T14:03:13 IST" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pm.qa.testcases.HomePageTest@1ed1993a]" started-at="2020-05-28T18:02:49 IST" name="tearDown" finished-at="2020-05-28T18:02:50 IST" duration-ms="579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
