@@ -22,6 +22,9 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//li[@class='ng-binding']")
 	public WebElement loginConfirmationLabel;
 
+	@FindBy(xpath = "//li[contains(text(),'Welcome Dlight SARINE')]")
+	public WebElement loginConfirmationDisplayUserName;
+
 	@FindBy(xpath = "//input[@placeholder='Search...']")
 	public WebElement searchBox;
 
@@ -79,6 +82,14 @@ public class HomePage extends TestBase {
 
 	}
 
+	// 2A. verify login userName Label
+	public String validateLoginConfirmationByUserName() {
+		WebDriverWait loginConfirmationValue = new WebDriverWait(driver, 60);
+		loginConfirmationValue.until(ExpectedConditions.visibilityOf(loginConfirmationDisplayUserName));
+		return loginConfirmationDisplayUserName.getText();
+
+	}
+
 	// 3. click in search box
 	public void clickInSearchBox() {
 		clickOn(driver, searchBox, 15);
@@ -88,7 +99,7 @@ public class HomePage extends TestBase {
 	// 4. enter program name in search box
 	public void enterSearchProgram(String myProgramName) {
 
-		//sendKeys(driver, searchBox, 15, "IAMChanges");
+		// sendKeys(driver, searchBox, 15, "IAMChanges");
 		sendKeys(driver, searchBox, 15, myProgramName);
 
 	}
@@ -178,9 +189,10 @@ public class HomePage extends TestBase {
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".form-group:nth-child(1) > label")));
 
 		activeProgramCheckbox.click();
-		//clickOn(driver, programActive, 60);
-	
-		//driver.findElement(By.cssSelector(".form-group:nth-child(1) > label")).click();
+		// clickOn(driver, programActive, 60);
+
+		// driver.findElement(By.cssSelector(".form-group:nth-child(1) >
+		// label")).click();
 
 	}
 

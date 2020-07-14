@@ -25,7 +25,13 @@ public class LoginPage extends TestBase {
 
 	@FindBy(xpath = "//div[@id='logo']//a//img")
 	public WebElement sarinelogo;
+	
+	@FindBy(xpath = "//span[contains(text(),'Email is required.')]")
+	public WebElement emailRequired;
 
+	@FindBy(xpath = "//div[@id='passwordarea']//label//span//span")
+	public WebElement passwordRequired;
+	
 	//======================================================//
 
 	// current class object - initialize Elements with the help of Page Factory
@@ -57,6 +63,19 @@ public class LoginPage extends TestBase {
 	public String validateInCorrectLogin() {
 		String InCorrectLoginMessage = loginFailed.getText();
 		return InCorrectLoginMessage;
+	}
+	
+	// 5. verify login with empty username
+	public String validateLoginWithEmptyUsername() {
+		String EmptyEmailMessage = emailRequired.getText();
+	
+		return EmptyEmailMessage;
+	}
+	
+	// 5. verify login with empty password
+	public String validateLoginWithEmptyPassword() {
+		String EmptyPasswordMessage = passwordRequired.getText();
+		return EmptyPasswordMessage;
 	}
 
 }
