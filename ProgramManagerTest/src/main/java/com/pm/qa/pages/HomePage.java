@@ -22,7 +22,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//li[@class='ng-binding']")
 	public WebElement loginConfirmationLabel;
 
-	@FindBy(xpath = "//li[contains(text(),'Welcome Dlight SARINE')]")
+	@FindBy(xpath = "//li[contains(text(),'Welcome Platform QA - Auto')]")
 	public WebElement loginConfirmationDisplayUserName;
 
 	@FindBy(xpath = "//input[@placeholder='Search...']")

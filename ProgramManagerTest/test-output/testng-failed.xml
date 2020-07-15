@@ -6,8 +6,8 @@
       <class name="com.pm.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="verifyLoginWithValidUsernamePassword"/>
           <include name="tearDown"/>
-          <include name="verifyLoginWithEmptyUsername"/>
         </methods>
       </class> <!-- com.pm.qa.testcases.LoginPageTest -->
     </classes>
