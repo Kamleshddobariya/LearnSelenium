@@ -238,39 +238,39 @@ public class NewProgramPage extends TestBase {
 	}
 
 	// 6b. select template type and template name
-		public void selectTemplateTypePR() throws Exception {
+	public void selectTemplateTypePR() throws Exception {
 
-			String DD_xpath = "//option[contains(text(),'Digital Display')]";
-			String DR_xpath = "//option[contains(text(),'Digital Report')]";
-			String PR_xpath = "//option[contains(text(),'Printed Report')]";
-			String Origin3D_xpath = "//option[contains(text(),'Origin 3D')]";
+		String DD_xpath = "//option[contains(text(),'Digital Display')]";
+		String DR_xpath = "//option[contains(text(),'Digital Report')]";
+		String PR_xpath = "//option[contains(text(),'Printed Report')]";
+		String Origin3D_xpath = "//option[contains(text(),'Origin 3D')]";
 
-			// *Thread.sleep(4000);
-			// *clickOn(driver, selectTemplateType, 15);
-			// selectTemplateType.click();
-			// *selectDropDownValue(DD_xpath, "Digital Display");
-			// *sendKeys(driver, templateName, 15, "AutoTest_DD");
-			// templateName.submit();
-			// *clickOn(driver, selectTemplateName, 15);
-			// selectTemplateName.click();
-			// templateApply.click();
+		// *Thread.sleep(4000);
+		// *clickOn(driver, selectTemplateType, 15);
+		// selectTemplateType.click();
+		// *selectDropDownValue(DD_xpath, "Digital Display");
+		// *sendKeys(driver, templateName, 15, "AutoTest_DD");
+		// templateName.submit();
+		// *clickOn(driver, selectTemplateName, 15);
+		// selectTemplateName.click();
+		// templateApply.click();
 
-			{
-				WebElement dropdown = driver.findElement(By.cssSelector("#templateForm > .ng-untouched"));
-				dropdown.findElement(By.xpath("//option[. = 'Printed Report']")).click();
-			}
+		{
+			WebElement dropdown = driver.findElement(By.cssSelector("#templateForm > .ng-untouched"));
+			dropdown.findElement(By.xpath("//option[. = 'Printed Report']")).click();
+		}
 
 //				sendKeys(driver, templateName, 15, "AutoTest_DD");
 //				clickOn(driver, selectTemplateName, 30);
 
-			driver.findElement(By.linkText("AutoTest_PR")).click();
+		driver.findElement(By.linkText("AutoTest_PR")).click();
 
-		}
+	}
 
-		// 7b. click on template apply
-		public void clickOnTemplateApplyPR() {
-			clickOn(driver, templateApply, 15);
-		}
+	// 7b. click on template apply
+	public void clickOnTemplateApplyPR() {
+		clickOn(driver, templateApply, 15);
+	}
 
 	// 8. make bundle active
 	public void clickOnBundleActive() throws Exception {
