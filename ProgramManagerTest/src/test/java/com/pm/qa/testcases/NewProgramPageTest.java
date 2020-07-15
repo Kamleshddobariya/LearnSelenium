@@ -46,7 +46,15 @@ public class NewProgramPageTest extends TestBase {
 		newprogramPage.createNewTemplateList();
 		newprogramPage.selectTemplateTypeDD();
 		newprogramPage.clickOnTemplateApplyDD();
-
+		
+		newprogramPage.createNewTemplateList();
+		newprogramPage.selectTemplateTypeDR();
+		newprogramPage.clickOnTemplateApplyDR();
+		
+		newprogramPage.createNewTemplateList();
+		newprogramPage.selectTemplateTypePR();
+		newprogramPage.clickOnTemplateApplyPR();
+		
 		newprogramPage.clickOnBundleActive();
 		newprogramPage.clickOnApplyBundle();
 
